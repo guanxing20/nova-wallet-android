@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModelProvider
 import dagger.Module
 import dagger.Provides
 import dagger.multibindings.IntoMap
-import io.novafoundation.nova.app.root.di.RootActionBottomSheetLauncher
 import io.novafoundation.nova.app.root.domain.RootInteractor
 import io.novafoundation.nova.app.root.presentation.RootRouter
 import io.novafoundation.nova.app.root.presentation.RootViewModel
@@ -59,7 +58,7 @@ class RootActivityModule {
         compoundRequestBusHandler: CompoundRequestBusHandler,
         pushNotificationsInteractor: PushNotificationsInteractor,
         externalServiceInitializer: ExternalServiceInitializer,
-        @RootActionBottomSheetLauncher actionBottomSheetLauncher: ActionBottomSheetLauncher,
+        actionBottomSheetLauncher: ActionBottomSheetLauncher,
         toastMessageManager: ToastMessageManager
     ): ViewModel {
         return RootViewModel(

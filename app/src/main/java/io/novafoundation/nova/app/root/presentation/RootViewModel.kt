@@ -79,7 +79,7 @@ class RootViewModel(
 
         checkForUpdates()
 
-        syncProxies()
+        syncDelegatedAccounts()
 
         syncCurrencies()
 
@@ -104,6 +104,7 @@ class RootViewModel(
 
     private fun observeBusEvents() {
         compoundRequestBusHandler.observe()
+            .launchIn(this)
     }
 
     private fun subscribeDeepLinkCallback() {
@@ -138,8 +139,10 @@ class RootViewModel(
         launch { currencyInteractor.syncCurrencies() }
     }
 
-    private fun syncProxies() {
-        interactor.syncProxies()
+    private fun syncDelegatedAccounts() {
+        interactor.syncExternalAccounts()
+
+        interactor.syncPendingMultisigOperations()
             .inBackground()
             .launchIn(rootScope)
     }

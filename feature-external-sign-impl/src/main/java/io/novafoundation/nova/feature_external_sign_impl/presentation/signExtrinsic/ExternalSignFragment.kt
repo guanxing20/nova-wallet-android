@@ -16,7 +16,7 @@ import io.novafoundation.nova.common.view.setProgressState
 import io.novafoundation.nova.common.view.shape.addRipple
 import io.novafoundation.nova.common.view.shape.getBlockDrawable
 import io.novafoundation.nova.common.view.showValueOrHide
-import io.novafoundation.nova.feature_account_api.presenatation.account.wallet.showWallet
+import io.novafoundation.nova.feature_account_api.view.showWallet
 import io.novafoundation.nova.feature_account_api.view.showAddress
 import io.novafoundation.nova.feature_account_api.view.showChain
 import io.novafoundation.nova.feature_external_sign_api.di.ExternalSignFeatureApi
@@ -32,7 +32,7 @@ import javax.inject.Inject
 
 private const val PAYLOAD_KEY = "DAppSignExtrinsicFragment.Payload"
 
-class ExternalSignFragment : BaseFragment<ExternaSignViewModel, FragmentConfirmSignExtrinsicBinding>() {
+class ExternalSignFragment : BaseFragment<ExternalSignViewModel, FragmentConfirmSignExtrinsicBinding>() {
 
     companion object {
 
@@ -69,7 +69,7 @@ class ExternalSignFragment : BaseFragment<ExternaSignViewModel, FragmentConfirmS
     }
 
     @Suppress("UNCHECKED_CAST")
-    override fun subscribe(viewModel: ExternaSignViewModel) {
+    override fun subscribe(viewModel: ExternalSignViewModel) {
         setupFeeLoading(viewModel, binder.confirmSignExtinsicFee)
         observeValidations(viewModel)
 
@@ -111,7 +111,7 @@ class ExternalSignFragment : BaseFragment<ExternaSignViewModel, FragmentConfirmS
         }
     }
 
-    private fun setupFeeLoading(viewModel: ExternaSignViewModel, feeView: FeeView) {
+    private fun setupFeeLoading(viewModel: ExternalSignViewModel, feeView: FeeView) {
         val mixin = viewModel.originFeeMixin
         feeView.setVisible(mixin != null)
 

@@ -1,5 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyEllipsis">
+
+    <string name="proxied_card_not_supported_title">Debit Card is not supported for this Proxied wallet</string>
+    <string name="proxied_card_not_supported_message">To manage your Debit Card, please switch to a different wallet with Polkadot network.</string>
+
+    <!--<string name="referendum_full_details_hash">Call hash</string>-->
+    <string name="common_call_hash">Call hash</string>
+
+    <string name="common_copy_call_data">Copy call data</string>
+    <string name="common_share_call_data">Share call data</string>
+
+    <string name="multisig_approve_transaction_unavailable_title">Cannot perform this transaction</string>
+    <string name="multisig_approve_transaction_unavailable_message">This transaction has already been rejected or executed.</string>
+
+    <string name="multisig_transaction_created_subtitle">Other signatories can now confirm the transaction.\nYou can track its status in the %s.</string>
+    <string name="multisig_transaction_created_subtitle_highlight">Transactions to sign</string>
+
+    <string name="accounts_update_proxieds_title">Delegated to you</string>
+
+    <string name="account_proxieds">Delegated to you (Proxied)</string>
+
+    <string name="multisig_signing_reject_confirmation_subtitle">Transaction will be rejected. Multisig deposit will be returned to %s.</string>
+
+    <string name="common_full_details">Full details</string>
+
+    <string name="multisig_deposit_description">The deposit stays locked on the depositor’s account until the multisig operation is executed or rejected.</string>
+
+    <string name="common_copy_hash">Copy hash</string>
+    <string name="common_share_hash">Share hash</string>
+
+    <string name="common_depositor">Depositor</string>
+    <string name="multisig_deposit">Multisig deposit</string>
+    <string name="common_call_data">Call data</string>
+    <string name="multisig_extrinsic_details_subtitle">Make sure the operation is correct</string>
+
+    <string name="multisig_on_behalf_of">On behalf of</string>
+    <string name="common_signatory">Signatory</string>
+    <string name="common_hide">Hide</string>
+    <string name="common_show">Show</string>
+    <string name="multisig_operation_details_signatories">Signatories (%d of %d)</string>
+
+    <string name="swap_dry_run_failed_inline_message">Simulation of swap step failed</string>
+
+    <string name="common_dry_run_failed_title">Transaction simulation failed</string>
+    <string name="common_dry_run_failed_message">Nova simulates the transaction beforehand to prevent errors. This simulation didn’t succeed. Try again later or with a higher amount. If the issue persists, please contact Nova Wallet Support in Settings.</string>
+
+    <string name="multisig_signatory_validation_deposit_fee">%s doesn’t have enough balance to pay the network fee of %s and place multisig deposit of %s. You need to add %s more to your balance</string>
+    <string name="multisig_signatory_validation_deposit">%s doesn’t have enough balance to place multisig deposit of %s. You need to add %s more to your balance</string>
+    <string name="multisig_signatory_validation_fee">%s doesn’t have enough balance to pay the network fee of %s. You need to add %s more to your balance</string>
+
+    <string name="invalid_call_data_title">Invalid call data</string>
+    <string name="invalid_call_data_message">This call data for another operation with call hash %s</string>
+
+    <string name="multisig_operation_details_call_data_not_found">Enter call data to view details</string>
+
+    <string name="enter_call_data_title">Enter call data</string>
+
+
+    <string name="multisig_wallet_details_info_warning_other_signatories">Other signatories:</string>
+    <string name="multisig_wallet_details_info_warning_title">Threshold %d out of %d</string>
+
+    <string name="multisig_card_not_supported_title">Debit Card is not supported for Multisig</string>
+    <string name="multisig_card_not_supported_message">To manage your Debit Card, please switch to a different type of wallet.</string>
+
+    <string name="multisig_sell_not_supported_title">Sell is not supported for Multisig</string>
+    <string name="multisig_sell_not_supported_message">To sell crypto for fiat, please switch to a different type of wallet.</string>
+
+
+    <string name="multisig_pending_operations">Transactions to sign</string>
+
+    <string name="multisig_operations_progress">Signing (%s of %s)</string>
+
+
+    <string name="multisig_operations_created">Created by you</string>
+    <string name="multisig_operations_signed">Signed by you</string>
+
+
+    <string name="multisig_pending_operations_on_behalf_of">On behalf of:</string>
+
+    <string name="multisig_operations_unknown_calldata">Unknown operation</string>
+
+
+    <string name="multisig_callhash_exists_title">Operation already exists</string>
+    <string name="multisig_callhash_exists_message">%s has already initiated the same operation and it is currently waiting to be signed by other signatories.</string>
+
+    <string name="multisig_signatory_validation_ed">%s needs at least %s to pay this transaction fee and stay above the minimum network balance. Current balance is: %s</string>
+
+    <string name="multisig_signing_is_not_supported_message">Multisig wallets do not support signing arbitrary messages — only transactions</string>
+
+    <string name="multisig_signing_warning_title">Multisig transaction</string>
+    <string name="multisig_signing_warning_message">The multisig transaction will be initiated by %s. The initiator pays the network fee and reserves a multisig deposit, which will be unreserved once the transaction is executed.</string>
+
+    <string name="account_multisig_group_label">shared control (multisig)</string>
+
+    <string name="delegated_accounts_fragment_title">Wallet list has been updated</string>
+
+    <string name="delegated_accounts_fragment_explanation">Proxy and Multisig accounts auto-detected and organized for you. Manage anytime in Settings.</string>
+
+    <string name="account_proxied">Proxied</string>
+    <string name="active_multisig_title">Shared control</string>
+
+    <string name="delegation_updates_deactivated_title">No longer valid</string>
+
+    <string name="multisig_transaction_created_title">Multisig transaction created</string>
+    <string name="multisig_transaction_created_view_details">View details</string>
+
+    <string name="multisig_operation_details_approve">Approve</string>
+    <string name="multisig_operation_details_approve_and_execute">Approve &amp; Execute</string>
+    <string name="multisig_operation_details_reject">Reject</string>
+
+    <string name="account_multisig">Multisig</string>
+    <string name="multisig_wallet_details_info_warning">Transactions from this wallet require approval from multiple signatories. Your account is one of the signatories:</string>
+    <string name="multisig_signatory">Signatory:</string>
+
+
+    <string name="swap_failure_cannot_receive_insufficient_asset_out">You must have at least %s on %s to receive %s token</string>
+
     <string name="account_migration_title">Welcome to Nova!</string>
     <string name="account_migration_subtitle">You’re almost there! 🎉\n Just tap below to complete the setup and start using your accounts seamlessly in both the Polkadot App and Nova Wallet</string>
 
@@ -792,8 +908,6 @@
 
     <string name="proxied_wallet_details_info_warning">This account granted access to perform transactions to the following account:</string>
 
-    <string name="common_dont_show_again">Do not show this again</string>
-
     <string name="proxy_signing_warning_title">This is Delegating (Proxied) account</string>
     <string name="proxy_signing_warning_message">Transaction will be initiated by %s as a delegated account. Network fee will be paid by delegated account.</string>
 
@@ -801,12 +915,6 @@
     <string name="proxy_signing_not_enough_permission_message">%1$s delegated %2$s only for %3$s</string>
 
     <string name="proxy_signing_is_not_supported_message">Proxied wallets do not support signing arbitrary messages — only transactions</string>
-
-    <string name="delegated_accounts_fragment_title">Delegated accounts update</string>
-    <string name="delegated_accounts_fragment_explanation">Nova Wallet automatically adds delegated authorities (Proxy) to a separate category for you. You can always manage wallets in Settings.</string>
-    <string name="proxy_about">What is a Proxy?</string>
-
-    <string name="proxieds_updates_deactivated_title">No longer valid</string>
 
     <string name="proxy_wallet_type">%s proxy</string>
     <string name="account_proxy_type_any">Any</string>
@@ -817,8 +925,6 @@
     <string name="account_proxy_type_cancel_proxy">Cancel Proxy</string>
     <string name="account_proxy_type_auction">Auction</string>
     <string name="account_proxy_type_nomination_pools">Nomination Pools</string>
-
-    <string name="account_proxieds">Delegated to you (Proxieds)</string>
 
     <string name="deep_linking_chain_id_is_not_found">Chain is not found</string>
     <string name="deep_linking_governance_type_is_not_specified">Governance type is not specified</string>
@@ -1535,7 +1641,6 @@
 
     <string name="referendum_dapp_list_title">Use Nova DApp browser</string>
 
-    <string name="referendum_details_full_details">Full details</string>
     <string name="voting_status">Voting status</string>
     <string name="referendum_details_requested_amount">Requested amount</string>
 
@@ -1547,10 +1652,8 @@
     <string name="referendum_full_details_vote_threshold">Vote threshold</string>
     <string name="referendum_full_details_turnout">Turnout</string>
     <string name="referendum_full_details_electorate">Electorate</string>
-    <string name="referendum_full_details_hash">Call hash</string>
     <string name="referendum_full_details_approve_threshold">Approve curve</string>
     <string name="referendum_full_details_support_threshold">Support curve</string>
-    <string name="referendum_full_details_copy_hash">Copy hash</string>
     <string name="referendum_positive_voters_title">Aye votes</string>
     <string name="referendum_negative_voters_title">Nay votes</string>
 
