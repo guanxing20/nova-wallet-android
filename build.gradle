@@ -1,16 +1,16 @@
 buildscript {
     ext {
         // App version
-        versionName = '10.1.2'
-        versionCode = 218
+        versionName = '10.1.4'
+        versionCode = 221
 
         applicationId = "io.novafoundation.nova"
         releaseApplicationSuffix = "market"
 
         // SDK and tools
-        compileSdkVersion = 34
+        compileSdkVersion = 36
         minSdkVersion = 24
-        targetSdkVersion = 34
+        targetSdkVersion = 36
 
         kotlinVersion = '1.9.22'
 
